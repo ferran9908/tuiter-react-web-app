@@ -40,13 +40,10 @@
 }
 
 .wd-bookmarked-tweet > * {
-  /* margin-top: 12px; */
-  /* display: flex; */
-  /* flex-direction: row; */
   margin-left: 16px;
   margin-right: 16px;
-  /* border-bottom: 1px solid var(--border-color); */
 }
+
 .wd-tweet-avatar {
   height: 48px;
   width: 48px;
@@ -109,8 +106,6 @@
   max-width: 370px;
   margin-bottom: 10px;
 }
-
-
 
 .wd-icon-padding {
   margin-right: 12px;
