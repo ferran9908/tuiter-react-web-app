@@ -16,3 +16,7 @@ body {
   border-right: 2px solid var(--border-color);
   height: 100vh;
 }
+
+a {
+  text-decoration: none;
+}
