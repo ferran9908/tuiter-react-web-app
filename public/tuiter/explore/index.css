@@ -72,3 +72,17 @@
   width: 60px;
 }
 
+@media (max-width: 1200px){
+  .left-navbar {
+    width: 25%;
+    min-width: 68px;
+  }
+}
+
+
+@media (min-width: 1200px) { 
+  .left-navbar {
+
+    width: auto;
+  }
+}
