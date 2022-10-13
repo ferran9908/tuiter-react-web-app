@@ -3,12 +3,21 @@ body {
 
 }
 
+ul {
+  list-style-type: none;
+}
+
+.wd-bg-black {
+  background: black;
+}
+
 .wd-rounded-corners {
   border-radius: 20px;
 }
 
 #left-navbar {
   flex: 1;
+  margin-left: 20px;
 }
 
 #main-content {
@@ -19,6 +28,7 @@ body {
 
 #follow-suggestions {
   flex: 1;
+  margin-right: 20px;
 }
 
 .wd-avatar-img {
@@ -113,6 +123,10 @@ body {
   font-weight: bold;
   padding-bottom: 15px;
   border-bottom: 3px solid rgb(29,161,242);
+}
+
+.wd-mr-1 {
+  margin-right: 7px;
 }
 
 @media (max-width: 1200px){
