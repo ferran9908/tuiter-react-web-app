@@ -129,6 +129,10 @@ ul {
   margin-right: 7px;
 }
 
+.wd-suggestions-bg {
+  background: #222222;
+}
+
 @media (max-width: 1200px){
   .wd-left-navbar {
     width: 25%;
