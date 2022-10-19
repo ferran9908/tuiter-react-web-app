@@ -4,7 +4,9 @@ function PostSummaryItem(item) {
   <div class="wd-flex-2">
   ${item.topic ? `<span class="d-block wd-gray-text">${item.topic}</span>` : ""}
     <span class="d-block">
-      <span class="wd-bold text-white">${item.userName}</span>
+      <span class="wd-bold text-white">${
+        item.userName
+      } <i class="wd-float-left fa fa-check-circle wd-float-left-side-bar wd-icon-dark-mode pt-1"></i></span>
       <span class="wd-gray-text">- ${item.time}</span>
     </span>
     <span class="wd-bold text-white">
