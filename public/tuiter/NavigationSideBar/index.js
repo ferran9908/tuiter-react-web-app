@@ -6,13 +6,13 @@ const NavigationSidebar = (active) => {
     </a>
     <a class="list-group-item ${
       active.toLowerCase() === "home" ? "active" : ""
-    }" href="/public/tuiter/HomeScreen/index.html">
+    }" href="../HomeScreen/index.html">
         <i class="fas fa-home wd-mr-1" ></i>
        <span class="d-none d-sm-none d-md-none d-lg-inline">Home</span>
     </a>
     <a class="list-group-item ${
       active.toLowerCase() === "explore" ? "active" : ""
-    }" href="/public/tuiter/explore/index.html">
+    }" href="../explore/index.html">
         <i class="fas fa-hashtag wd-mr-1"></i>  
        <span class="d-none d-sm-none d-md-none d-lg-inline">Explore</span>
     </a>
