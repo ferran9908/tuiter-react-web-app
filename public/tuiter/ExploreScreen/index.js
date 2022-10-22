@@ -7,7 +7,6 @@ const ExploreComponent = () => {
                        <input type="text" class="wd-search-input" placeholder="Search Tuiter"/>
                        <a href="explore-settings.html">
                        <i class="fa fa-cog fa-2x wd-text-white align-middle" style="margin-left: 25px; background: black; color: #4E9ED1 !important;"></i> 
-<!-- <i class='fa fa-cog' style='color: white'></i> -->
                       </a>
            </div>
            <ul class="nav mb-2">
