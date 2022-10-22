@@ -1,5 +1,5 @@
 body {
-  background-color: black !important;
+  background-color: black;
 
 }
 
@@ -178,3 +178,6 @@ ul {
   }
 }
 
+.wd-tuiter-color {
+  color: #4E9ED1;
+}
