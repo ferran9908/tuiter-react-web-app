@@ -24,6 +24,7 @@ const PostItem = ({
         <img
           src={`${post.avatarIcon}`}
           className="wd-avatar-img rounded-circle"
+          alt="avatar"
         />
       </div>
       <div className="wd-margin-left">
@@ -36,7 +37,11 @@ const PostItem = ({
         <p>{post.body}</p>
 
         <div className="row border-thin border-grey border-solid">
-          <img src={`${post.image}`} className="wd-post-image pt-1 pb-1" />
+          <img
+            src={`${post.image}`}
+            className="wd-post-image pt-1 pb-1"
+            alt="banner"
+          />
           <div className="wd-text-bold wd-font-color-white">
             {post.cardTitle}
           </div>
@@ -51,7 +56,7 @@ const PostItem = ({
           {post.cardLink ? (
             <div className="wd-margin-top">
               <i className="bi bi-link-45deg">
-                <a className="ps-1 wd-hyperlink-grey" href="${post.cardLink}">
+                <a className="ps-1 wd-hyperlink-grey" href={`${post.cardLink}`}>
                   {post.cardLink}
                 </a>
               </i>
@@ -61,25 +66,25 @@ const PostItem = ({
           )}
           <div className="row wd-margin-top">
             <div className="col-3 wd-navbar">
-              <a className="wd-hyperlink-grey" href="#">
+              <a className="wd-hyperlink-grey" href="/tuiter/home">
                 <i className="bi bi-chat-fill wd-margin-right"></i>
                 {post.numberOfComments}
               </a>
             </div>
             <div className="col-3 wd-navbar">
-              <a className="wd-hyperlink-grey" href="#">
+              <a className="wd-hyperlink-grey" href="/tuiter/home">
                 <i className="bi bi-arrow-up-left-square wd-margin-right"></i>
                 {post.numberOfReposts}
               </a>
             </div>
             <div className="col-3 wd-navbar">
-              <a className="wd-hyperlink-grey" href="#">
+              <a className="wd-hyperlink-grey" href="/tuiter/home">
                 <i className="bi bi-heart wd-icon wd-margin-right"></i>
                 {post.numberOfLikes}
               </a>
             </div>
             <div className="col-3 wd-navbar">
-              <a className="wd-hyperlink-grey" href="#">
+              <a className="wd-hyperlink-grey" href="/tuiter/home">
                 <i className="bi bi-box-arrow-up wd-icon wd-margin-right"></i>
               </a>
             </div>
