@@ -2,6 +2,7 @@
   .wd-rounded-corners {
     border-radius: 20px;
   }
+
   
   #left-navbar {
     flex: 1;
@@ -18,12 +19,15 @@
     flex: 1;
     margin-right: 20px;
   }
+
+  .wd-image-div-border {
+    padding-right: 10px;
+  }
   
   .wd-avatar-img {
     height: 40px;
     width: 40px;
     object-fit: cover;
-  
   }
   
   .wd-flex-1 {
@@ -145,6 +149,10 @@
   
   .wd-negative-margin-left {
     margin-left: -5px;
+  }
+
+  .wd-liked {
+    color: red;
   }
   
   @media (max-width: 1200px){

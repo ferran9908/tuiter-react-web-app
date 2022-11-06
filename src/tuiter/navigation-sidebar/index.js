@@ -8,7 +8,7 @@ const NavigationSidebar = () => {
   const active = paths[2];
   return (
     <div className="list-group">
-      <a href="/tuiter" className="list-group-item">
+      <a href="/" className="list-group-item">
         Tuiter
       </a>
       <Link
