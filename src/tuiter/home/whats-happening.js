@@ -17,6 +17,7 @@ const WhatsHappening = () => {
         <img
           src="https://i.pinimg.com/originals/dd/f5/0e/ddf50e1451baf41d1aa01947fe9452bd.jpg"
           width={60}
+          alt={"Avatar"}
         />
       </div>
       <div className="col-10">
