@@ -18,8 +18,8 @@ const currentUser = {
 
 export const convertDateToRequiredFormat = (date) => {
   const d = date.split("/");
-  return `${d[2]}-${d[1] < 10 ? `0${d[1]}` : `${d[1]}`}-${
-    d[0] < 10 ? `0${d[0]}` : `${d[0]}`
+  return `${d[2]}-${d[1] < 10 && d[1][0] !== "0" ? `0${d[1]}` : `${d[1]}`}-${
+    d[0] < 10 && d[0][0] ? `0${d[0]}` : `${d[0]}`
   }`;
 };
 
