@@ -10,10 +10,24 @@ const currentUser = {
   bio: "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
   website: "youtube.com/webdevtv",
   location: "Boston, MA",
-  dateOfBirth: "1968-07-07",
+  dateOfBirth: "7/7/1968",
   dateJoined: "4/2009",
   followingCount: 340,
   followersCount: 223,
+};
+
+export const convertDateToRequiredFormat = (date) => {
+  const d = date.split("/");
+  return `${d[2]}-${d[1] < 10 ? `0${d[1]}` : `${d[1]}`}-${
+    d[0] < 10 ? `0${d[0]}` : `${d[0]}`
+  }`;
+};
+
+export const convertRequiredDateToReadableFormat = (date) => {
+  const d = date.split("-");
+  return `${d[2] < 10 ? `0${d[2]}` : `${d[2]}`}/${
+    d[1] < 10 ? `0${d[1]}` : `${d[1]}`
+  }/${d[0]}`;
 };
 
 const profileSlice = createSlice({
@@ -27,7 +41,7 @@ const profileSlice = createSlice({
       state.bio = bio;
       state.website = website;
       state.location = location;
-      state.dateOfBirth = dateOfBirth;
+      state.dateOfBirth = convertRequiredDateToReadableFormat(dateOfBirth);
     },
   },
 });

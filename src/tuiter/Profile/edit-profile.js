@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import BannerSection from "./banner-section";
-import { updateProfile } from "./profile-reducer";
+import { convertDateToRequiredFormat, updateProfile } from "./profile-reducer";
 
 const EditProfile = ({ profile }) => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const EditProfile = ({ profile }) => {
     bio: profile.bio,
     website: profile.website,
     location: profile.location,
-    dateOfBirth: profile.dateOfBirth,
+    dateOfBirth: convertDateToRequiredFormat(profile.dateOfBirth),
   });
 
   return (
