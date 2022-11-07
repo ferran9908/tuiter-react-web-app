@@ -64,7 +64,7 @@ const Profile = ({ profile }) => {
       </div>
       <div className="wd-margin-top">
         <span className="mx-2">
-          <b>{profile.followersCount}</b> Followers
+          <b>{profile.followersCount}</b> Following
         </span>
         <span>
           <b>{profile.followingCount}</b> Followers
