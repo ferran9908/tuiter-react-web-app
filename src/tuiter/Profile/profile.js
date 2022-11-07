@@ -28,7 +28,7 @@ const Profile = ({ profile }) => {
         />
         <button className="wd-edit-profile-button">
           <Link
-            to="/tuiter/edit-profile"
+            to="/tuiter/profile/edit-profile"
             style={{ textDecoration: "none", color: "black" }}
           >
             Edit Profile

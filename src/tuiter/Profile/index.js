@@ -12,7 +12,7 @@ const ProfilePage = () => {
       <Routes>
         <Route index element={<Profile profile={profile} />} />
         <Route
-          path="/edit-profile"
+          path="edit-profile"
           element={<EditProfile profile={profile} />}
         />
       </Routes>

@@ -54,3 +54,21 @@
 .wd-margin-top {
     margin-top: 12px;
 }
+
+.wd-save {
+    background: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 23px;
+    padding: -5px 10px -5px 10px;
+}
+
+.wd-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-curved-border{
+    border-radius: 5px;
+    border: 1px gray solid;
+}
