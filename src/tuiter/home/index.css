@@ -146,6 +146,10 @@
     color: rgb(110, 118, 125);
     text-decoration: none;
   }
+
+  .wd-cursor-pointer {
+    cursor: pointer;
+  }
   
   .wd-negative-margin-left {
     margin-left: -5px;

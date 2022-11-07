@@ -5,11 +5,11 @@ const TuitStats = ({ liked, replies, retuits, likes, tuitId }) => {
   const dispatch = useDispatch();
   return (
     <div className="row wd-margin-top">
-      <div className="col-3 wd-hyperlink-grey wd-navbar">
+      <div className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer">
         <i className="bi bi-chat-fill wd-margin-right"></i>
         {replies}
       </div>
-      <div className="col-3 wd-hyperlink-grey wd-navbar">
+      <div className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer">
         <i className="bi bi-arrow-up-left-square wd-margin-right"></i>
         {retuits}
       </div>
@@ -17,7 +17,7 @@ const TuitStats = ({ liked, replies, retuits, likes, tuitId }) => {
         onClick={() => {
           dispatch(toggleTuitLike({ tuitId }));
         }}
-        className="col-3 wd-hyperlink-grey wd-navbar"
+        className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer"
       >
         <i
           className={`bi bi-heart wd-icon wd-margin-right ${
@@ -26,7 +26,7 @@ const TuitStats = ({ liked, replies, retuits, likes, tuitId }) => {
         ></i>
         {likes}
       </div>
-      <div className="col-3 wd-hyperlink-grey wd-navbar">
+      <div className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer">
         <i className="bi bi-box-arrow-up wd-icon wd-margin-right"></i>
       </div>
     </div>

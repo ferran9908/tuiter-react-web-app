@@ -25,8 +25,8 @@ export const convertDateToRequiredFormat = (date) => {
 
 export const convertRequiredDateToReadableFormat = (date) => {
   const d = date.split("-");
-  return `${d[2] < 10 ? `0${d[2]}` : `${d[2]}`}/${
-    d[1] < 10 ? `0${d[1]}` : `${d[1]}`
+  return `${d[2] < 10 ? `${d[2]}` : `${d[2]}`}/${
+    d[1] < 10 ? `${d[1]}` : `${d[1]}`
   }/${d[0]}`;
 };
 

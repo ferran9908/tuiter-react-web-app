@@ -34,11 +34,9 @@ const tuitsSlice = createSlice({
       });
     },
     toggleTuitLike(state, action) {
-      console.log("hello");
-      state.map((tuit, idx) => {
-        console.log(idx, tuit.liked);
-        if (tuit._id == action.payload.tuitId) {
-          if (tuit.liked == false) {
+      state.forEach((tuit) => {
+        if (tuit._id === action.payload.tuitId) {
+          if (tuit.liked === false) {
             tuit.likes += 1;
             tuit.liked = true;
           } else {
