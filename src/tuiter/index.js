@@ -8,7 +8,7 @@ import ProfileComponent from "./Profile";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import { configureStore } from "@reduxjs/toolkit";
-import { Provider, useSelector } from "react-redux";
+import { Provider } from "react-redux";
 import profileReducer from "./Profile/profile-reducer";
 
 const store = configureStore({

@@ -24,7 +24,7 @@ const Profile = ({ profile }) => {
         <img
           className="wd-profile-pic"
           src={profile.profilePicture}
-          alt="Profile Picture"
+          alt="Profile"
         />
         <button className="wd-edit-profile-button">
           <Link
