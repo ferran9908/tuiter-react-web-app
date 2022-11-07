@@ -33,8 +33,23 @@ const tuitsSlice = createSlice({
         _id: new Date().getTime(),
       });
     },
+    toggleTuitLike(state, action) {
+      console.log("hello");
+      state.map((tuit, idx) => {
+        console.log(idx, tuit.liked);
+        if (tuit._id == action.payload.tuitId) {
+          if (tuit.liked == false) {
+            tuit.likes += 1;
+            tuit.liked = true;
+          } else {
+            tuit.likes -= 1;
+            tuit.liked = false;
+          }
+        }
+      });
+    },
   },
 });
 
-export const { createTuit, deleteTuit } = tuitsSlice.actions;
+export const { createTuit, deleteTuit, toggleTuitLike } = tuitsSlice.actions;
 export default tuitsSlice.reducer;

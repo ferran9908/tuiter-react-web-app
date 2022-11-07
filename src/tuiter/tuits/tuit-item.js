@@ -26,6 +26,7 @@ const TuitItem = ({ post }) => {
         </div>
 
         <TuitStats
+          tuitId={post._id}
           liked={post.liked}
           likes={post.likes}
           replies={post.replies}
