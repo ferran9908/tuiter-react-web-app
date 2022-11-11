@@ -5,7 +5,7 @@ import { updateTuitThunk } from "../../services/tuits-thunks";
 const TuitStats = ({ tuit }) => {
   const dispatch = useDispatch();
   return (
-    <div className="row wd-margin-top">
+    <div className="d-flex wd-margin-top">
       <div className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer">
         <i className="bi bi-chat-fill wd-margin-right"></i>
         {tuit.replies}
@@ -16,7 +16,6 @@ const TuitStats = ({ tuit }) => {
       </div>
       <div
         onClick={() => {
-          console.log({ ...tuit, likes: tuit.likes + 1 });
           dispatch(
             updateTuitThunk({
               ...tuit,
@@ -24,9 +23,6 @@ const TuitStats = ({ tuit }) => {
             })
           );
         }}
-        // onClick={() => {
-        //   dispatch(toggleTuitLike({ tuitId }));
-        // }}
         className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer"
       >
         <i
@@ -35,6 +31,22 @@ const TuitStats = ({ tuit }) => {
           }`}
         ></i>
         {tuit.likes}
+      </div>
+      <div
+        onClick={() => {
+          dispatch(
+            updateTuitThunk({
+              ...tuit,
+              dislikes: tuit.dislikes + 1,
+            })
+          );
+        }}
+        className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer"
+      >
+        <i
+          className={`bi bi-hand-thumbs-down-fill wd-icon wd-margin-right`}
+        ></i>
+        {tuit.dislikes}
       </div>
       <div className="col-3 wd-hyperlink-grey wd-navbar wd-cursor-pointer">
         <i className="bi bi-box-arrow-up wd-icon wd-margin-right"></i>
